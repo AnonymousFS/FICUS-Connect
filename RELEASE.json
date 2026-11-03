@@ -1,0 +1,20 @@
+{
+  "name": "FICUS Connect",
+  "version": "0.8.3",
+  "channel": "beta",
+  "tag": "v0.8.3-beta",
+  "release_url": "https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.8.3-beta",
+  "windows_x64": {
+    "installer": "https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.8.3-beta/FICUS-Connect-0.8.3-Windows-x64-Setup.exe",
+    "sha256": "e3a0aec7fbe19bb627eb136cc1c7fa520e5eddbde2311e226efa96b5e880134a",
+    "size_bytes": 47440468,
+    "minimum_os": "Windows 10 1809",
+    "signed": false
+  },
+  "planned_platforms": [
+    "Android",
+    "iOS",
+    "Linux",
+    "macOS"
+  ]
+}

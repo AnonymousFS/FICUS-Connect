@@ -1,0 +1,37 @@
+name: Bug report / Ошибка
+description: Report a reproducible bug without private connection data.
+title: '[Bug] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Do not post subscription links, passwords, UUIDs, full QR codes, backups or unredacted logs. Не публикуйте реквизиты подключения.'
+  - type: input
+    id: version
+    attributes:
+      label: FICUS version / Версия FICUS
+      placeholder: 0.8.3 beta
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Windows version / Версия Windows
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Шаги воспроизведения
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior / Ожидаемое и фактическое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostics / Очищенная диагностика
+      description: Optional. Remove all identifying data and credentials first.

@@ -1,0 +1,21 @@
+# This repository contains only reviewed public documentation and media.
+*
+!.gitignore
+!README.md
+!README.ru.md
+!PRIVACY.md
+!SECURITY.md
+!THIRD_PARTY.md
+!DISTRIBUTION.md
+!RELEASE.json
+!assets/
+!assets/logo.png
+!assets/connection-en.png
+!assets/connection-ru.png
+!.github/
+!.github/ISSUE_TEMPLATE/
+!.github/ISSUE_TEMPLATE/bug-report.yml
+!.github/ISSUE_TEMPLATE/feature-request.yml
+!.github/ISSUE_TEMPLATE/config.yml
+!.github/FUNDING.yml
+# Installers and checksums belong in Releases, never in source history.
