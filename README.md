@@ -4,13 +4,13 @@
 <h1 align="center">FICUS Connect</h1>
 <p align="center">A quieter way to connect.</p>
 <p align="center">
-  <img alt="Release" src="https://img.shields.io/badge/version-0.8.3%20beta-A3BE8C?style=flat-square">
+  <img alt="Release" src="https://img.shields.io/badge/version-0.9.2%20beta-A3BE8C?style=flat-square">
   <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-192C23?style=flat-square">
   <img alt="Development status" src="https://img.shields.io/badge/status-in%20development-D8AE6C?style=flat-square">
 </p>
 <p align="center"><b>English</b> · <a href="README.ru.md">Русский</a></p>
 <p align="center">
-  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.8.3-beta/FICUS-Connect-0.8.3-Windows-x64-Setup.exe"><b>Download for Windows</b></a>
+  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe"><b>Download for Windows</b></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/AnonymousFS/FICUS-Connect/releases">All releases</a>
   &nbsp; · &nbsp;
@@ -29,7 +29,7 @@ This repository hosts **downloads, documentation and release information**. FICU
 
 | Platform | Status | Download |
 | --- | --- | --- |
-| Windows 10/11 · x64 | **Available · beta** | [Installer](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.8.3-beta/FICUS-Connect-0.8.3-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.8.3-beta/FICUS-Connect-0.8.3-Windows-x64-Setup.exe.sha256) |
+| Windows 10/11 · x64 | **Available · beta** | [Installer](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe.sha256) |
 | Android | Planned | Not released |
 | iOS | Planned | Not released |
 | Linux | Planned | Not released |
@@ -38,6 +38,8 @@ This repository hosts **downloads, documentation and release information**. FICU
 Ports to Android, iOS, Linux and macOS are on the roadmap. There are no release dates yet. Android TV / Apple TV support in FICUS itself is a future project; current Windows builds can send subscriptions to compatible INCY/HAPP TV clients.
 
 ## Getting started
+
+Version **0.9.2 beta** fixes country flags in server avatars, keeps the ficus illustration proportional, and corrects the installer version information. See the [release notes](https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.2-beta).
 
 1. Download and run the Windows x64 installer. Minimum OS: Windows 10 1809; Windows 11 is supported. ARM64 has not been tested.
 2. Open FICUS and add your own HTTPS subscription, import server links/JSON, or import a QR image.

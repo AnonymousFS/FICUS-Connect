@@ -4,13 +4,13 @@
 <h1 align="center">FICUS Connect</h1>
 <p align="center">Подключение без лишнего шума.</p>
 <p align="center">
-  <img alt="Версия" src="https://img.shields.io/badge/version-0.8.3%20beta-A3BE8C?style=flat-square">
+  <img alt="Версия" src="https://img.shields.io/badge/version-0.9.2%20beta-A3BE8C?style=flat-square">
   <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-192C23?style=flat-square">
   <img alt="Статус разработки" src="https://img.shields.io/badge/status-in%20development-D8AE6C?style=flat-square">
 </p>
 <p align="center"><a href="README.md">English</a> · <b>Русский</b></p>
 <p align="center">
-  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.8.3-beta/FICUS-Connect-0.8.3-Windows-x64-Setup.exe"><b>Скачать для Windows</b></a>
+  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe"><b>Скачать для Windows</b></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/AnonymousFS/FICUS-Connect/releases">Все версии</a>
   &nbsp; · &nbsp;
@@ -29,7 +29,7 @@ FICUS Connect — клиент для Windows на Flutter с ядрами Xray-
 
 | Платформа | Состояние | Загрузка |
 | --- | --- | --- |
-| Windows 10/11 · x64 | **Доступно · бета** | [Установщик](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.8.3-beta/FICUS-Connect-0.8.3-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.8.3-beta/FICUS-Connect-0.8.3-Windows-x64-Setup.exe.sha256) |
+| Windows 10/11 · x64 | **Доступно · бета** | [Установщик](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe.sha256) |
 | Android | В планах | Пока не выпущено |
 | iOS | В планах | Пока не выпущено |
 | Linux | В планах | Пока не выпущено |
@@ -38,6 +38,8 @@ FICUS Connect — клиент для Windows на Flutter с ядрами Xray-
 В дальнейшем планируем перенести приложение на Android, iOS, Linux и macOS. Даты пока не определены. Собственная версия FICUS для Android TV / Apple TV — будущий проект; сейчас Windows-клиент умеет отправлять подписки в совместимые INCY/HAPP на телевизоре.
 
 ## Начало работы
+
+В **0.9.2 beta** исправлены флаги внутри значков серверов, пропорции рисунка фикуса и отображение версии в установщике. Подробнее — в [описании выпуска](https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.2-beta).
 
 1. Скачайте и запустите установщик Windows x64. Минимальная ОС — Windows 10 1809; Windows 11 поддерживается. ARM64 отдельно не проверялся.
 2. Откройте FICUS и добавьте собственную HTTPS-подписку, импортируйте ссылки/JSON серверов либо изображение QR-кода.
