@@ -4,13 +4,16 @@
 <h1 align="center">FICUS Connect</h1>
 <p align="center">A quieter way to connect.</p>
 <p align="center">
-  <img alt="Release" src="https://img.shields.io/badge/version-0.9.2%20beta-A3BE8C?style=flat-square">
+  <img alt="Windows version" src="https://img.shields.io/badge/Windows%20beta-0.9.2-A3BE8C?style=flat-square">
+  <img alt="Android version" src="https://img.shields.io/badge/Android%20ARM64-0.9.4%20beta-A3BE8C?style=flat-square">
   <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-192C23?style=flat-square">
   <img alt="Development status" src="https://img.shields.io/badge/status-in%20development-D8AE6C?style=flat-square">
 </p>
 <p align="center"><b>English</b> · <a href="README.ru.md">Русский</a></p>
 <p align="center">
   <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe"><b>Download for Windows</b></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk"><b>Download for Android</b></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/AnonymousFS/FICUS-Connect/releases">All releases</a>
   &nbsp; · &nbsp;
@@ -19,7 +22,7 @@
 
 > **Beta — actively in development.** Features and behavior may change. TUN and Kill Switch are experimental; real-world interruption and leak protection have not been fully validated. Please keep a backup of your settings before updating.
 
-FICUS Connect is a Windows proxy/VPN client built with Flutter, using Xray-core and sing-box. Its restrained botanical interface keeps your subscriptions, servers and connection controls together.
+FICUS Connect is a Windows and Android proxy/VPN client built with Flutter, using Xray-core and sing-box. Its restrained botanical interface keeps your subscriptions, servers and connection controls together.
 
 This repository hosts **downloads, documentation and release information**. FICUS application source code and private debug symbols are not published here.
 
@@ -29,15 +32,23 @@ This repository hosts **downloads, documentation and release information**. FICU
 
 | Platform | Status | Download |
 | --- | --- | --- |
-| Windows 10/11 · x64 | **Available · beta** | [Installer](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe.sha256) |
-| Android | Planned | Not released |
+| Windows 10/11 · x64 | **Available · 0.9.2 beta** | [Installer](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe.sha256) |
+| Android 7.0+ · ARM64 | **Available · 0.9.4 beta** | [APK](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk.sha256) |
 | iOS | Planned | Not released |
 | Linux | Planned | Not released |
 | macOS | Planned | Not released |
 
-Ports to Android, iOS, Linux and macOS are on the roadmap. There are no release dates yet. Android TV / Apple TV support in FICUS itself is a future project; current Windows builds can send subscriptions to compatible INCY/HAPP TV clients.
+Ports to iOS, Linux and macOS remain on the roadmap without release dates. A dedicated Android TV / Apple TV receiver is a future project; current builds can send subscriptions to compatible INCY/HAPP TV clients.
 
-## Getting started
+### Android beta
+
+Install the ARM64 APK, add your own subscription or servers, choose a server on **Connection**, and approve Android's VPN request. You can update over the earlier signed Android betas without clearing app data. Version 0.9.4 fixes Xray's GeoIP/GeoSite preparation; a working connection has been confirmed by a tester on Android 16. Broader device and protocol testing continues.
+
+The Android beta supports multiple subscriptions, Xray/sing-box selection by node, editable DNS/domain/IP routing, connection sharing and QR import from an image. Camera QR scanning, per-app routing and background subscription scheduling are not implemented. Windows firewall/Kill Switch and desktop settings do not apply to Android.
+
+[Separate sing-box runtime sources and build instructions](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Android-Runtime-Sources-0.9.4.tar.gz) are provided under their component licenses. This archive does not contain the private FICUS application source tree. See [third-party notices](THIRD_PARTY.md).
+
+## Getting started on Windows
 
 Version **0.9.2 beta** fixes country flags in server avatars, keeps the ficus illustration proportional, and corrects the installer version information. See the [release notes](https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.2-beta).
 
@@ -66,23 +77,23 @@ The installer includes the app, Xray, sing-box, NaiveProxy's runtime library and
 ## Privacy and source protection
 
 - The public release contains no configured account, personal subscription, server credentials, session configuration or developer settings. Add your own connection details after installation.
-- Subscriptions and settings are stored separately from the application using Windows DPAPI-backed storage.
+- Subscriptions and settings are stored separately from the application using Windows DPAPI or Android platform secure storage. Android cloud backup is disabled.
 - The release payload is restricted to an explicit file list and compared locally against known private credentials before publication. Debug symbols remain private; Dart code is obfuscated. This does **not** make a downloadable binary impossible to reverse engineer.
 - Sharing is explicit. A QR/link grants access to its recipient. INCY transfer encrypts the subscription before relay; HAPP Web Import receives the link through its own service. See [Privacy](PRIVACY.md).
-- Xray/sing-box are separate, unmodified upstream components. Their public source archives and licenses remain in the installer. A small readable PowerShell helper manages the experimental TUN lifecycle. These are not the FICUS Dart/C++ application sources.
+- Windows includes separate upstream Xray/sing-box executables, source archives, licenses and a readable PowerShell TUN helper. Android uses the protected-socket Xray SDK and a separate sing-box runtime; its runtime sources and build instructions accompany the APK. See [component notices](THIRD_PARTY.md). The FICUS application source remains private.
 
 ## Roadmap
 
 - Improve stability and real-world testing of the Windows beta.
 - Validate TV transfers and expand import compatibility.
-- Port FICUS Connect to **Android, iOS, Linux and macOS**.
+- Stabilize the Android beta and port FICUS Connect to **iOS, Linux and macOS**.
 - Explore a dedicated TV receiver after the mobile/TV application is developed.
 
 Planned work is not a promise of a release date or a feature already available today.
 
 ## Feedback
 
-Use [GitHub Issues](https://github.com/AnonymousFS/FICUS-Connect/issues) for reproducible bugs and feature requests. Include your FICUS version, Windows version, steps to reproduce, and expected/actual behavior. **Never attach subscription URLs, server keys, passwords, encrypted backups or unredacted logs/screenshots.** See [Security](SECURITY.md).
+Use [GitHub Issues](https://github.com/AnonymousFS/FICUS-Connect/issues) for reproducible bugs and feature requests. Include your FICUS version, operating system version, device model, steps to reproduce, and expected/actual behavior. **Never attach subscription URLs, server keys, passwords, encrypted backups or unredacted logs/screenshots.** See [Security](SECURITY.md).
 
 ## Support FICUS
 
