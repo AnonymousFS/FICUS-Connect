@@ -4,16 +4,16 @@
 <h1 align="center">FICUS Connect</h1>
 <p align="center">A quieter way to connect.</p>
 <p align="center">
-  <img alt="Windows version" src="https://img.shields.io/badge/Windows%20beta-0.9.2-A3BE8C?style=flat-square">
-  <img alt="Android version" src="https://img.shields.io/badge/Android%20ARM64-0.9.4%20beta-A3BE8C?style=flat-square">
+  <img alt="Windows version" src="https://img.shields.io/badge/Windows%20beta-0.9.8-A3BE8C?style=flat-square">
+  <img alt="Android version" src="https://img.shields.io/badge/Android%20ARM64-0.9.8%20beta-A3BE8C?style=flat-square">
   <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-192C23?style=flat-square">
   <img alt="Development status" src="https://img.shields.io/badge/status-in%20development-D8AE6C?style=flat-square">
 </p>
 <p align="center"><b>English</b> · <a href="README.ru.md">Русский</a></p>
 <p align="center">
-  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe"><b>Download for Windows</b></a>
+  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-Windows-x64-Setup.exe"><b>Download for Windows</b></a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk"><b>Download for Android</b></a>
+  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-android-arm64.apk"><b>Download for Android</b></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/AnonymousFS/FICUS-Connect/releases">All releases</a>
   &nbsp; · &nbsp;
@@ -32,8 +32,8 @@ This repository hosts **downloads, documentation and release information**. FICU
 
 | Platform | Status | Download |
 | --- | --- | --- |
-| Windows 10/11 · x64 | **Available · 0.9.2 beta** | [Installer](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe.sha256) |
-| Android 7.0+ · ARM64 | **Available · 0.9.4 beta** | [APK](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk.sha256) |
+| Windows 10/11 · x64 | **Available · 0.9.8 beta** | [Installer](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-Windows-x64-Setup.exe.sha256) |
+| Android 7.0+ · ARM64 | **Available · 0.9.8 beta** | [APK](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-android-arm64.apk) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-android-arm64.apk.sha256) |
 | iOS | Planned | Not released |
 | Linux | Planned | Not released |
 | macOS | Planned | Not released |
@@ -46,17 +46,29 @@ Install the ARM64 APK, add your own subscription or servers, choose a server on 
 
 The Android beta supports multiple subscriptions, Xray/sing-box selection by node, editable DNS/domain/IP routing, connection sharing and QR import from an image. Camera QR scanning, per-app routing and background subscription scheduling are not implemented. Windows firewall/Kill Switch and desktop settings do not apply to Android.
 
+Add **FICUS VPN** to Android Quick Settings from **Settings → Connection → Add FICUS VPN tile**.
+
 [Separate sing-box runtime sources and build instructions](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Android-Runtime-Sources-0.9.4.tar.gz) are provided under their component licenses. This archive does not contain the private FICUS application source tree. See [third-party notices](THIRD_PARTY.md).
 
 ## Getting started on Windows
 
-Version **0.9.2 beta** fixes country flags in server avatars, keeps the ficus illustration proportional, and corrects the installer version information. See the [release notes](https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.2-beta).
+Version **0.9.8 beta** adds subscription links and update checks. On Windows, closing the window keeps FICUS in the system tray by default. See the [release notes](https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.8-beta).
 
 1. Download and run the Windows x64 installer. Minimum OS: Windows 10 1809; Windows 11 is supported. ARM64 has not been tested.
 2. Open FICUS and add your own HTTPS subscription, import server links/JSON, or import a QR image.
 3. Choose a server on **Connection**, select the connection mode, and connect.
 
 The installer includes the app, Xray, sing-box, NaiveProxy's runtime library and the required C++ runtime. No component download is needed during installation. Installation is per user; TUN and firewall changes request Windows administrator approval separately. The build is currently **unsigned**, so Windows may show an unknown-publisher warning. SHA256 verifies file integrity; it does not replace a publisher signature.
+
+## Open a subscription from a browser
+
+Windows and Android register `ficus://` when you install FICUS Connect 0.9.8 or later. RemnaWave can use `ficus://import/<URL>`, where `<URL>` is the HTTPS subscription address. Percent-encode the complete address to preserve its query parameters. The older `ficus://add?url=<URL>` format also works.
+
+```text
+ficus://import/https%3A%2F%2Fexample.invalid%2Fsubscription
+```
+
+Allow your browser to open FICUS, review the filled-in address and select **Save**. On Windows you can manage the handler in **Settings → Data**. The manual update check is available under **⋮ → Check for updates** on both platforms.
 
 ## Features
 

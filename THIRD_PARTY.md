@@ -1,6 +1,6 @@
 # Third-party components / Сторонние компоненты
 
-## Windows 0.9.2 beta
+## Windows 0.9.8 beta
 
 | Component | Included version | Upstream / license |
 | --- | --- | --- |
@@ -27,7 +27,7 @@ The public repository does not include the FICUS Flutter/C++ source tree.
 Программа также содержит читаемый служебный PowerShell-скрипт управления TUN.
 Полное дерево Flutter/C++-исходников FICUS в этом репозитории не публикуется.
 
-## Android 0.9.4 beta
+## Android 0.9.8 beta
 
 | Component | Included version | Source / license |
 | --- | --- | --- |

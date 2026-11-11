@@ -1,16 +1,16 @@
 {
   "name": "FICUS Connect",
-  "version": "0.9.4",
+  "version": "0.9.8",
   "channel": "beta",
-  "tag": "v0.9.4-beta",
-  "release_url": "https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.4-beta",
+  "tag": "v0.9.8-beta",
+  "release_url": "https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.8-beta",
   "windows_x64": {
-    "installer": "https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe",
-    "sha256": "2b938a5b6378ddf0cb48a042a57b3398e7e6c546658a5ecc6618c866d4dcab6e",
-    "size_bytes": 47489974,
+    "installer": "https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-Windows-x64-Setup.exe",
+    "sha256": "b3c7c6ec8354e5a7d06286430fcadedec84644b3ff4cba22647d0b654c011fdb",
+    "size_bytes": 47504408,
     "minimum_os": "Windows 10 1809",
     "signed": false,
-    "version": "0.9.2"
+    "version": "0.9.8"
   },
   "planned_platforms": [
     "iOS",
@@ -18,11 +18,11 @@
     "macOS"
   ],
   "android_arm64": {
-    "version": "0.9.4",
-    "version_code": 19,
-    "apk": "https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk",
-    "sha256": "e69e049a242f083ec8169b83d708eb195b8d648a9c1185629a1a05b0ae0fa2a0",
-    "size_bytes": 59736499,
+    "version": "0.9.8",
+    "version_code": 23,
+    "apk": "https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-android-arm64.apk",
+    "sha256": "d2fd4a3d791c2a637bdc706d1332527e96839d79962d4c0ecf17177826fcfc1c",
+    "size_bytes": 59750423,
     "minimum_os": "Android 7.0 (API 24)",
     "signed": true,
     "runtime_sources": "https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Android-Runtime-Sources-0.9.4.tar.gz",

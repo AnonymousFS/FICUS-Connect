@@ -4,16 +4,16 @@
 <h1 align="center">FICUS Connect</h1>
 <p align="center">Подключение без лишнего шума.</p>
 <p align="center">
-  <img alt="Версия Windows" src="https://img.shields.io/badge/Windows%20beta-0.9.2-A3BE8C?style=flat-square">
-  <img alt="Версия Android" src="https://img.shields.io/badge/Android%20ARM64-0.9.4%20beta-A3BE8C?style=flat-square">
+  <img alt="Версия Windows" src="https://img.shields.io/badge/Windows%20beta-0.9.8-A3BE8C?style=flat-square">
+  <img alt="Версия Android" src="https://img.shields.io/badge/Android%20ARM64-0.9.8%20beta-A3BE8C?style=flat-square">
   <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-192C23?style=flat-square">
   <img alt="Статус разработки" src="https://img.shields.io/badge/status-in%20development-D8AE6C?style=flat-square">
 </p>
 <p align="center"><a href="README.md">English</a> · <b>Русский</b></p>
 <p align="center">
-  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe"><b>Скачать для Windows</b></a>
+  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-Windows-x64-Setup.exe"><b>Скачать для Windows</b></a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk"><b>Скачать для Android</b></a>
+  <a href="https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-android-arm64.apk"><b>Скачать для Android</b></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/AnonymousFS/FICUS-Connect/releases">Все версии</a>
   &nbsp; · &nbsp;
@@ -32,8 +32,8 @@ FICUS Connect — клиент для Windows и Android на Flutter с ядр�
 
 | Платформа | Состояние | Загрузка |
 | --- | --- | --- |
-| Windows 10/11 · x64 | **Доступно · 0.9.2 beta** | [Установщик](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.2-beta/FICUS-Connect-0.9.2-beta-Windows-x64-Setup.exe.sha256) |
-| Android 7.0+ · ARM64 | **Доступно · 0.9.4 beta** | [APK](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Connect-0.9.4-beta-android-arm64.apk.sha256) |
+| Windows 10/11 · x64 | **Доступно · 0.9.8 beta** | [Установщик](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-Windows-x64-Setup.exe) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-Windows-x64-Setup.exe.sha256) |
+| Android 7.0+ · ARM64 | **Доступно · 0.9.8 beta** | [APK](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-android-arm64.apk) · [SHA256](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.8-beta/FICUS-Connect-0.9.8-beta-android-arm64.apk.sha256) |
 | iOS | В планах | Пока не выпущено |
 | Linux | В планах | Пока не выпущено |
 | macOS | В планах | Пока не выпущено |
@@ -46,17 +46,29 @@ FICUS Connect — клиент для Windows и Android на Flutter с ядр�
 
 Android-бета поддерживает несколько подписок, выбор Xray/sing-box по узлу, редактирование DNS и правил доменов/IP, обмен подключениями и импорт QR из изображения. Сканирование QR камерой, маршрутизация по приложениям и фоновое обновление подписок пока не реализованы. Настройки рабочего стола и Windows Firewall/Kill Switch к Android не относятся.
 
+Добавьте **FICUS VPN** в быстрые настройки Android через **Настройки → Соединение → Добавить плитку FICUS VPN**.
+
 [Исходники отдельного sing-box runtime и инструкция сборки](https://github.com/AnonymousFS/FICUS-Connect/releases/download/v0.9.4-beta/FICUS-Android-Runtime-Sources-0.9.4.tar.gz) доступны по лицензиям соответствующих компонентов. Архив не содержит закрытый код самого приложения FICUS. Подробнее: [сторонние компоненты](THIRD_PARTY.md).
 
 ## Начало работы в Windows
 
-В **0.9.2 beta** исправлены флаги внутри значков серверов, пропорции рисунка фикуса и отображение версии в установщике. Подробнее — в [описании выпуска](https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.2-beta).
+В **0.9.8 beta** добавлены ссылки подписок и проверка обновлений. При закрытии окна Windows приложение по умолчанию сворачивается в трей. Подробности в [описании выпуска](https://github.com/AnonymousFS/FICUS-Connect/releases/tag/v0.9.8-beta).
 
 1. Скачайте и запустите установщик Windows x64. Минимальная ОС — Windows 10 1809; Windows 11 поддерживается. ARM64 отдельно не проверялся.
 2. Откройте FICUS и добавьте собственную HTTPS-подписку, импортируйте ссылки/JSON серверов либо изображение QR-кода.
 3. На экране **«Подключение»** выберите сервер, режим работы и подключитесь.
 
 Установщик включает приложение, Xray, sing-box, библиотеку NaiveProxy и необходимые библиотеки C++. Дополнительные компоненты во время установки не скачиваются. Установка выполняется для текущего пользователя; TUN и изменения брандмауэра отдельно запрашивают подтверждение администратора Windows. У сборки пока **нет цифровой подписи**, поэтому Windows может показать предупреждение о неизвестном издателе. SHA256 проверяет целостность файла, но не заменяет подпись издателя.
+
+## Открытие подписки из браузера
+
+Windows и Android регистрируют `ficus://` при установке FICUS Connect 0.9.8 или новее. Для RemnaWave используйте `ficus://import/<URL>`, где `<URL>` — HTTPS-адрес подписки. Закодируйте адрес целиком, чтобы сохранить параметры запроса. Прежний формат `ficus://add?url=<URL>` тоже поддерживается.
+
+```text
+ficus://import/https%3A%2F%2Fexample.invalid%2Fsubscription
+```
+
+Разрешите браузеру открыть FICUS, проверьте заполненный адрес и нажмите **«Сохранить»**. В Windows обработчиком можно управлять в **Настройки → Данные**. Ручная проверка обновлений доступна через **⋮ → Проверить обновления** на обеих платформах.
 
 ## Возможности
 
